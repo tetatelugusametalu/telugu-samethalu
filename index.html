@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="te" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>తేట తెలుగు సామెతలు | Teta Telugu Sametalu</title>
-    <!-- Tailwind CSS Engine -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Premium Global Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Telugu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Vector Graphics Engine -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #FAF5EF; /* Pure Luxury Indian Ivory Parchment */
-        }
-        .telugu-heading {
-            font-family: 'Noto Serif Telugu', serif;
-            line-height: 1.5;
-        }
-        .telugu-body {
-            font-family: 'Noto Serif Telugu', serif;
-            line-height: 1.9;
-        }
-    </style>
-</head>
+<header class="sticky top-0 z-50 bg-[#FAF5EF] border-b border-[#E6DDD3] backdrop-blur-md bg-opacity-95">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Main Hyperlink Wrapper -->
+        <a href="https://tetatelugusametalu.github.io/telugu-sametalu/" class="flex items-center space-x-4 group focus:outline-none focus:ring-2 focus:ring-[#8C2A20] focus:ring-offset-2 rounded-xl p-1 transition-all z-10">
+            <!-- Professional Logo Asset Integration -->
+            <img id="logoImg" src="logo.png" alt="తేట తెలుగు సామెతలు Logo" class="w-12 h-12 rounded-full object-cover shadow-md border border-[#E6DDD3] group-hover:scale-105 transition-transform duration-300" onerror="this.classList.add('hidden'); document.getElementById('logoFallback').classList.remove('hidden').classList.add('flex');">
+            
+            <!-- Elegant Text Fallback (Using Tailwind classes for safer rendering) -->
+            <div id="logoFallback" class="hidden w-12 h-12 rounded-full bg-[#8C2A20] items-center justify-center text-[#FAF5EF] font-semibold text-lg telugu-heading shadow-md group-hover:scale-105 transition-transform duration-300">
+                తే
+            </div>
+            
+            <div>
+                <span class="block text-lg font-bold text-[#8C2A20] tracking-tight telugu-heading group-hover:text-stone-900 transition-colors">తేట తెలుగు సామెతలు</span>
+                <span class="block text-[10px] uppercase tracking-widest text-[#6B5A47] font-bold mt-0.5">Teta Telugu Sametalu</span>
+            </div>
+        </a>
+        
+        <nav class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-bold text-[#574B3E]">
+            <a href="#about" class="hover:text-[#8C2A20] transition">సంకల్పం</a>
+            <a href="#stats" class="hover:text-[#8C2A20] transition">విజయాలు</a>
+            <a href="#broadcast" class="hover:text-[#8C2A20] transition">కంటెంట్</a>
+        </nav>
+    </div>
+</header>
 <body class="text-stone-800 antialiased selection:bg-amber-200 min-h-screen flex flex-col justify-between">
 
     <!-- Header Navigation -->
