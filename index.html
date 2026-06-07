@@ -35,20 +35,27 @@
                 <!-- Professional Logo Asset Integration -->
                 <img src="logo.png" alt="తేట తెలుగు సామెతలు Logo" class="w-12 h-12 rounded-full object-cover shadow-md border border-[#E6DDD3] group-hover:scale-105 transition-transform duration-300" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <!-- Elegant Text Fallback if logo.png fails to load locally -->
-                <div style="display:none;" class="w-12 h-12 rounded-full bg-[#8C2A20] items-center justify-center text-[#FAF5EF] font-semibold text-lg telugu-heading shadow-md group-hover:scale-105 transition-transform duration-300">
+                <div style="display:none;" class="w-12 h-12 rounded-full bg-[#8C2A20] items-center justify-center text-[#FAF5EF] font-semibold text-lg telugu-heading shadow-md group-hover:scale-105 transition-transform duration-300" id="fallbackLogo">
                     తే
                 </div>
                 <div>
-                    <span class="block text-lg font-bold text-[#8C2A20] tracking-tight telugu-heading group-hover:text-stone-900 transition-colors">తేట తెలుగు సామెతలు</span>
-                    <span class="block text-[10px] uppercase tracking-widest text-[#6B5A47] font-bold mt-0.5">Teta Telugu Sametalu</span>
+                    <span class="block text-lg font-bold text-[#8C2A20] tracking-tight telugu-heading group-hover:text-stone-900 transition-colors" data-te="తేట తెలుగు సామెతలు" data-en="Teta Telugu Sametalu">తేట తెలుగు సామెతలు</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-[#6B5A47] font-bold mt-0.5" data-te="Teta Telugu Sametalu" data-en="Pure Telugu Proverbs">Teta Telugu Sametalu</span>
                 </div>
             </a>
             
-            <nav class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-bold text-[#574B3E]">
-                <a href="#about" class="hover:text-[#8C2A20] transition">సంకల్పం</a>
-                <a href="#stats" class="hover:text-[#8C2A20] transition">విజయాలు</a>
-                <a href="#broadcast" class="hover:text-[#8C2A20] transition">కంటెంట్</a>
-            </nav>
+            <div class="flex items-center space-x-6">
+                <nav class="hidden md:flex space-x-10 text-xs uppercase tracking-widest font-bold text-[#574B3E]">
+                    <a href="#about" class="hover:text-[#8C2A20] transition" data-te="సంకల్పం" data-en="Vision">సంకల్పం</a>
+                    <a href="#stats" class="hover:text-[#8C2A20] transition" data-te="విజయాలు" data-en="Impact">విజయాలు</a>
+                    <a href="#broadcast" class="hover:text-[#8C2A20] transition" data-te="కంటెంట్" data-en="Media">కంటెంట్</a>
+                </nav>
+
+                <!-- Modern Minimalist i18n Language Toggle Button -->
+                <button id="langToggle" class="px-3 py-1.5 border border-[#8C2A20] bg-[#8C2A20] text-white hover:bg-transparent hover:text-[#8C2A20] rounded-lg text-xs tracking-wider uppercase font-bold transition-all duration-200 shadow-sm">
+                    English
+                </button>
+            </div>
         </div>
     </header>
 
@@ -61,10 +68,11 @@
             </div>
             
             <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-stone-900 telugu-heading">
-                నిత్య జీవిత సత్యాలు,<br><span class="text-[#8C2A20] font-light italic">మన తెలుగు సామెతలు!</span>
+                <span data-te="నిత్య జీవిత సత్యాలు," data-en="Eternal Truths of Daily Life,">నిత్య జీవిత సత్యాలు,</span><br>
+                <span class="text-[#8C2A20] font-light italic" data-te="మన తెలుగు సామెతలు!" data-en="Our Telugu Proverbs!">మన తెలుగు సామెతలు!</span>
             </h1>
             
-            <p class="text-base md:text-lg text-[#574B3E] max-w-2xl mx-auto font-light leading-relaxed">
+            <p class="text-base md:text-lg text-[#574B3E] max-w-2xl mx-auto font-light leading-relaxed" data-te="Preserving the cultural bedrock of Telugu folklore. Reimagining ancient rural wisdom through highly sophisticated, modern digital mediums." data-en="Preserving the cultural bedrock of Telugu folklore. Reimagining ancient rural wisdom through highly sophisticated, modern digital mediums.">
                 Preserving the cultural bedrock of Telugu folklore. Reimagining ancient rural wisdom through highly sophisticated, modern digital mediums.
             </p>
         </div>
@@ -73,33 +81,33 @@
     <!-- Editorial Motivation Section -->
     <section id="about" class="py-24 max-w-3xl mx-auto px-6">
         <div class="space-y-2 mb-16 border-l-4 border-[#8C2A20] pl-6">
-            <span class="text-[10px] uppercase tracking-widest text-[#8C2A20] font-bold block">The Foundation</span>
-            <h2 class="text-2xl md:text-3xl font-bold text-stone-900 telugu-heading">పేజీ ప్రారంభం వెనుక అసలు ఉద్దేశ్యం</h2>
+            <span class="text-[10px] uppercase tracking-widest text-[#8C2A20] font-bold block" data-te="The Foundation" data-en="The Foundation">The Foundation</span>
+            <h2 class="text-2xl md:text-3xl font-bold text-stone-900 telugu-heading" data-te="పేజీ ప్రారంభం వెనుక అసలు ఉద్దేశ్యం" data-en="The Core Purpose Behind This Platform">పేజీ ప్రారంభం వెనుక అసలు ఉద్దేశ్యం</h2>
         </div>
 
         <div class="space-y-8 text-stone-700 telugu-body text-base md:text-[17px] leading-relaxed">
-            <p class="text-[#8C2A20] font-semibold text-lg border-b border-[#E6DDD3] pb-6">
+            <p class="text-[#8C2A20] font-semibold text-lg border-b border-[#E6DDD3] pb-6" data-te="నేను ఈ ఫేస్‌బుక్ మరియు ఇన్‌స్టాగ్రామ్ పేజీని ప్రారంభించిన ముఖ్య ఉద్దేశ్యం తెలుగు సంస్కృతిని సామెతల ద్వారా ముందుకు తీసుకెళ్లడం. మన పెద్దలు సామెతలలో ఎంతో లోతైన అర్థాన్ని దాచిపెట్టి, మనకు జీవన విలువలను అందించారు." data-en="The primary objective behind establishing these Facebook and Instagram platforms is to propel Telugu culture forward through traditional proverbs. Our elders layered profound, multi-dimensional life values inside these subtle dynamic statements.">
                 నేను ఈ ఫేస్‌బుక్ మరియు ఇన్‌స్టాగ్రామ్ పేజీని ప్రారంభించిన ముఖ్య ఉద్దేశ్యం తెలుగు సంస్కృతిని సామెతల ద్వారా ముందుకు తీసుకెళ్లడం. మన పెద్దలు సామెతలలో ఎంతో లోతైన అర్థాన్ని దాచిపెట్టి, మనకు జీవన విలువలను అందించారు.
             </p>
 
             <!-- Solid Vintage Amber Block for Vital Callout -->
             <div class="my-10 bg-[#F5EAD7] border-y-2 border-[#E3CEAB] p-8 rounded-2xl relative shadow-sm">
                 <span class="absolute top-2 right-6 text-[#DCC196] text-7xl font-serif select-none pointer-events-none">“</span>
-                <p class="text-[#422D13] font-medium relative z-10">
+                <p class="text-[#422D13] font-medium relative z-10" data-te="ఇప్పటి కాలంలో తెలుగు భాషను సరైన విధంగా ఉపయోగించకపోవడం, తప్పుగా వ్రాయడం, తప్పుగా ఉచ్చరించడం సాధారణంగా మారింది. పోస్టర్లు, నోటీసులు, ఆటో రిక్షాల వెనుక భాగాల్లో కూడా తప్పుగా వ్రాసిన తెలుగు కనిపిస్తోంది. ఈ విధంగా కొనసాగితే, తప్పుగా ఉన్నదే సరైనదిగా భావించే పరిస్థితి ఏర్పడి, తెలుగు సంస్కృతికి తీవ్రమైన నష్టం కలిగే ప్రమాదం ఉంది." data-en="In contemporary times, improper structural application, incorrect spelling, and flawed pronunciation of the Telugu language have unfortunately become common. Misspelled Telugu script can be regularly observed across commercial posters, notices, and public auto-rickshaws. If this vector layout continues uncorrected, society risks accepting flawed variants as the standard, causing severe structural degradation to classical Telugu cultural integrity.">
                     ఇప్పటి కాలంలో తెలుగు భాషను సరైన విధంగా ఉపయోగించకపోవడం, తప్పుగా వ్రాయడం, తప్పుగా ఉచ్చరించడం సాధారణంగా మారింది. పోస్టర్లు, నోటీసులు, ఆటో రిక్షాల వెనుక భాగాల్లో కూడా తప్పుగా వ్రాసిన తెలుగు కనిపిస్తోంది. ఈ విధంగా కొనసాగితే, తప్పుగా ఉన్నదే సరైనదిగా భావించే పరిస్థితి ఏర్పడి, తెలుగు సంస్కృతికి తీవ్రమైన నష్టం కలిగే ప్రమాదం ఉంది.
                 </p>
             </div>
 
-            <p>
+            <p data-te="ముందు కాలంలో ఉన్నట్లుగా అమ్మమ్మలు, నానమ్మలు, తాతయ్యలు వంటి పెద్దలు మనతో ఉండి ఈ అమూల్యమైన సామెతలను పంచుకునే పరిస్థితి ఇప్పుడు తగ్గింది. అందుకే ఈ జ్ఞానాన్ని డిజిటల్ రూపంలో భద్రపరచాలని, సామాజిక మాధ్యమాల ద్వారా అందరికీ చేరవేయాలని నేను భావించాను." data-en="The structural presence of grandmothers and grandfathers passing down these invaluable ancestral proverbs in physical family structures has substantially decreased. Recognizing this shift, I resolved to archive this deep cultural intelligence into a scalable digital blueprint, using modern media streams to distribute it widely.">
                 ముందు కాలంలో ఉన్నట్లుగా అమ్మమ్మలు, నానమ్మలు, తాతయ్యలు వంటి పెద్దలు మనతో ఉండి ఈ అమూల్యమైన సామెతలను పంచుకునే పరిస్థితి ఇప్పుడు తగ్గింది. అందుకే ఈ జ్ఞానాన్ని డిజిటల్ రూపంలో భద్రపరచాలని, సామాజిక మాధ్యమాల ద్వారా అందరికీ చేరవేయాలని నేను భావించాను.
             </p>
 
             <!-- Solid Sand Tint Block -->
-            <p class="text-stone-800 font-medium bg-[#EFE6DB] p-6 rounded-xl border border-[#D9CDBF]">
-                నేను ఈ పేజీని ఫాలోవర్స్ లేదా సబ్‌స్క్రైబర్స్ కోసం నిర్వహించడం లేదు. సామాజిక మాధ్యమాల ఒక మంచి లక్షణం ఏమిటంటే, మీరు లైక్ చేయడం, షేర్ చేయడం, లేదా ఫాలో అవ్వడం ద్వారా, ఇదే अभिలాష, ఆసక్తి ఉన్న మరింత మంది వరకు ఈ విషయం చేరేలా చేయడం దీని ప్రత్యేకత!
+            <p class="text-stone-800 font-medium bg-[#EFE6DB] p-6 rounded-xl border border-[#D9CDBF]" data-te="నేను ఈ పేజీని ఫాలోవర్స్ లేదా సబ్‌స్క్రైబర్స్ కోసం నిర్వహించడం లేదు. సామాజిక మాధ్యమాల ఒక మంచి లక్షణం ఏమిటంటే, మీరు లైక్ చేయడం, షేర్ చేయడం, లేదా ఫాలో అవ్వడం ద్వారా, ఇదే అభిలాష, ఆసక్తి ఉన్న మరింత మంది వరకు ఈ విషయం చేరేలా చేయడం దీని ప్రత్యేకత!" data-en="This ecosystem is not engineered purely for baseline validation metrics or artificial view counts. The true functional strength of digital algorithms rests in collective curation—when you engage, like, or share, you optimize transmission lines to reach other like-minded stewards of the language.">
+                నేను ఈ పేజీని ఫాలోవర్స్ లేదా సబ్‌స్క్రైబర్స్ కోసం నిర్వహించడం లేదు. సామాజిక మాధ్యమాల ఒక మంచి లక్షణం ఏమిటంటే, మీరు లైక్ చేయడం, షేర్ చేయడం, లేదా ఫాలో అవ్వడం ద్వారా, ఇదే అభిలాష, ఆసక్తి ఉన్న మరింత మంది వరకు ఈ విషయం చేరేలా చేయడం దీని ప్రత్యేకత!
             </p>
 
-            <div class="pt-8 text-[#8C2A20] font-bold text-xl md:text-2xl leading-snug">
+            <div class="pt-8 text-[#8C2A20] font-bold text-xl md:text-2xl leading-snug" data-te="మీరు ప్రత్యక్షంగా గానీ, పరోక్షంగా గానీ మా ఈ లక్ష్యంలో భాగస్వాములగా అయి, మనమందరం కలిసి తెలుగు భాషను, సంస్కృతిని కాపాడేందుకు ముందుకు పయనిద్దాం." data-en="Whether explicitly or quietly behind the scenes, you are a critical stakeholder in this archive. Together, let us move forward to preserve the architectural layout of our Telugu language and history.">
                 మీరు ప్రత్యక్షంగా గానీ, పరోక్షంగా గానీ మా ఈ లక్ష్యంలో భాగస్వాములగా అయి, మనమందరం కలిసి తెలుగు భాషను, సంస్కృతిని కాపాడేందుకు ముందుకు పయనిద్దాం.
             </div>
         </div>
@@ -111,19 +119,19 @@
             <div class="space-y-1 border-b md:border-b-0 md:border-r border-white/20 pb-6 md:pb-0 md:pr-8">
                 <span class="block text-[10px] uppercase tracking-widest text-[#F5EAD7] font-bold">Audience Footprint</span>
                 <div class="text-3xl md:text-4xl font-bold tracking-tight text-[#F5EAD7] font-mono">427,789+</div>
-                <p class="text-xs text-stone-200 font-medium telugu-heading">మాసిక వీక్షణలు (Monthly Views)</p>
+                <p class="text-xs text-stone-200 font-medium telugu-heading" data-te="మాసిక వీక్షణలు (Monthly Views)" data-en="Monthly Impressions">మాసిక వీక్షణలు (Monthly Views)</p>
             </div>
             
             <div class="space-y-1 border-b md:border-b-0 md:border-r border-white/20 pb-6 md:pb-0 md:pr-8">
                 <span class="block text-[10px] uppercase tracking-widest text-[#F5EAD7] font-bold">Strategic Value</span>
                 <div class="text-3xl md:text-4xl font-bold tracking-tight text-[#F5EAD7] font-mono">100%</div>
-                <p class="text-xs text-stone-200 font-medium telugu-heading">నిజమైన తెలుగు సంస్కృతి</p>
+                <p class="text-xs text-stone-200 font-medium telugu-heading" data-te="నిజమైన తెలుగు సంస్కృతి" data-en="Authentic Telugu Cultural Heritage">నిజమైన తెలుగు సంస్కృతి</p>
             </div>
 
             <div class="space-y-1">
                 <span class="block text-[10px] uppercase tracking-widest text-[#F5EAD7] font-bold">Execution Design</span>
                 <div class="text-3xl md:text-4xl font-bold tracking-tight text-[#F5EAD7] font-mono">12s</div>
-                <p class="text-xs text-stone-200 font-medium">High-retention video structures</p>
+                <p class="text-xs text-stone-200 font-medium" data-te="High-retention video structures" data-en="High-retention video structures">High-retention video structures</p>
             </div>
         </div>
     </section>
@@ -132,7 +140,7 @@
     <section id="broadcast" class="py-24 max-w-4xl mx-auto px-6 text-center space-y-8">
         <div class="space-y-2">
             <span class="text-[10px] uppercase tracking-widest text-[#6B5A47] font-bold block">The Content Hub</span>
-            <h2 class="text-2xl md:text-3xl font-bold text-stone-900 telugu-heading">డిజిటల్ మాధ్యమాలలో మన ప్రయాణం</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-stone-900 telugu-heading" data-te="డిజిటల్ మాధ్యమాలలో మన ప్రయాణం" data-en="Our Trajectory Across Digital Networks">డిజిటల్ మాధ్యమాలలో మన ప్రయాణం</h2>
         </div>
         
         <!-- Fully Interactive Clickable Card Container -->
@@ -156,7 +164,7 @@
             
             <!-- Close Modal Trigger Top Banner -->
             <div class="flex justify-between items-center px-4 py-3 bg-stone-950 text-stone-400 border-b border-stone-800 text-xs tracking-wider uppercase font-mono">
-                <span>Preservation Spotlight</span>
+                <span data-te="Preservation Spotlight" data-en="Preservation Spotlight">Preservation Spotlight</span>
                 <button id="closePlayerBtn" class="text-stone-400 hover:text-white text-base focus:outline-none">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -181,7 +189,7 @@
                 <div class="flex items-center justify-center md:justify-start space-x-4">
                     <!-- Integrated Logo in Footer -->
                     <img src="logo.png" alt="తేట తెలుగు సామెతలు Logo" class="w-9 h-9 rounded-full object-cover grayscale opacity-80" onerror="this.style.display='none';">
-                    <span class="text-base font-bold text-[#F5EAD7] tracking-tight telugu-heading">తేట తెలుగు సామెతలు</span>
+                    <span class="text-base font-bold text-[#F5EAD7] tracking-tight telugu-heading" data-te="తేట తెలుగు సామెతలు" data-en="Teta Telugu Sametalu">తేట తెలుగు సామెతలు</span>
                     <span class="text-[9px] uppercase tracking-widest text-stone-500 font-mono font-bold border border-stone-800 px-2 py-0.5 rounded">2026 Edition</span>
                 </div>
                 <p class="text-xs text-stone-500 font-light max-w-sm leading-relaxed">
@@ -190,67 +198,96 @@
             </div>
 
             <!-- Pure Flat Monochromatic Typographic Link Rows -->
-        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-xs font-mono tracking-wider uppercase">
-            <a href="https://www.instagram.com/tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
-                <i class="fa-brands fa-instagram text-sm text-stone-500"></i>
-                <span>Instagram</span>
-            </a>
-            <!-- Exact Verified Facebook Handle Destination Link Structure -->
-            <a href="https://www.facebook.com/tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
-                <i class="fa-brands fa-facebook-f text-sm text-stone-500"></i>
-                <span>Facebook</span>
-            </a>
-            <a href="https://www.youtube.com/@Tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
-                <i class="fa-brands fa-youtube text-sm text-stone-500"></i>
-                <span>YouTube</span>
-            </a>
-            <a href="https://www.threads.net/@tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
-                <i class="fa-brands fa-threads text-sm text-stone-500"></i>
-                <span>Threads</span>
-            </a>
-            <!-- Twitter (X) Blueprint Placeholder -->
-            <a href="#" onclick="event.preventDefault();" class="text-stone-500 hover:text-stone-400 cursor-not-allowed transition flex items-center space-x-2 select-none" title="Twitter channel coming soon">
-                <i class="fa-brands fa-x-twitter text-sm text-stone-600"></i>
-                <span>Twitter</span>
-            </a>
-        </div>
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-xs font-mono tracking-wider uppercase">
+                <a href="https://www.instagram.com/tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
+                    <i class="fa-brands fa-instagram text-sm text-stone-500"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
+                    <i class="fa-brands fa-facebook-f text-sm text-stone-500"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.youtube.com/@Tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
+                    <i class="fa-brands fa-youtube text-sm text-stone-500"></i>
+                    <span>YouTube</span>
+                </a>
+                <!-- Threads link layout updated with matching brand vector icon metrics -->
+                <a href="https://www.threads.net/@tetatelugusametalu" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition flex items-center space-x-2">
+                    <i class="fa-brands fa-threads text-sm text-stone-500"></i>
+                    <span>Threads</span>
+                </a>
+                <a href="#" onclick="event.preventDefault();" class="text-stone-500 hover:text-stone-400 cursor-not-allowed transition flex items-center space-x-2 select-none" title="Twitter channel coming soon">
+                    <i class="fa-brands fa-x-twitter text-sm text-stone-600"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
 
         </div>
 
         <div class="max-w-5xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-stone-600 font-semibold gap-4">
-            <p class="telugu-heading text-stone-500 text-xs">తెలుగు భాషా సంస్కృతి రక్షణ సమితి</p>
+            <p class="telugu-heading text-stone-500 text-xs" data-te="తెలుగు భాషా సంస్కృతి రక్షణ సమితి" data-en="Telugu Language & Cultural Protection Council">తెలుగు భాషా సంస్కృతి రక్షణ సమితి</p>
             <p>Designed for Digital Preservation</p>
         </div>
     </footer>
 
-    <!-- Zero-Maintenance Dynamic Logic Engine -->
+    <!-- i18N & UI Logic Engine -->
     <script>
+        // Internationalization Engine Architecture
+        const langToggle = document.getElementById('langToggle');
+        const htmlNode = document.documentElement;
+        const fallbackLogo = document.getElementById('fallbackLogo');
+        
+        let currentLang = 'te'; // Default Initialization
+        
+        function updateDOMPhrases(lang) {
+            document.querySelectorAll('[data-te]').forEach(element => {
+                const translation = element.getAttribute(`data-${lang}`);
+                if (translation) {
+                    element.textContent = translation;
+                }
+            });
+            
+            // Adjust properties safely based on active translation context
+            if(lang === 'en') {
+                langToggle.textContent = "తెలుగు";
+                htmlNode.setAttribute('lang', 'en');
+                if (fallbackLogo) fallbackLogo.textContent = "T";
+            } else {
+                langToggle.textContent = "English";
+                htmlNode.setAttribute('lang', 'te');
+                if (fallbackLogo) fallbackLogo.textContent = "తే";
+            }
+        }
+
+        langToggle.addEventListener('click', () => {
+            currentLang = (currentLang === 'te') ? 'en' : 'te';
+            updateDOMPhrases(currentLang);
+        });
+
+        // Traditional Video Modal Controls
         const openBtn = document.getElementById('openPlayerBtn');
         const closeBtn = document.getElementById('closePlayerBtn');
         const modal = document.getElementById('videoModal');
         const video = document.getElementById('archiveVideo');
 
-        // Add your video file names here when you save them into GitHub
         const proverbArchive = [
             "video1.mp4",
             "video2.mp4",
             "video3.mp4"
         ];
 
-        // Elegant Modal Opening & Random Video Selection Engine
         openBtn.addEventListener('click', () => {
             const randomVideo = proverbArchive[Math.floor(Math.random() * proverbArchive.length)];
             const videoSource = video.querySelector('source');
             
             videoSource.src = randomVideo;
-            video.load();   // Reload the player source element
-            video.play();   // Begin playback automatically
+            video.load();   
+            video.play();   
             
             modal.classList.remove('hidden');
             document.body.classList.add('overflow-hidden'); 
         });
 
-        // Safe Clean Modal Dismissal Closure Engine
         function closeModal() {
             modal.classList.add('hidden');
             document.body.classList.remove('overflow-hidden');
